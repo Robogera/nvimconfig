@@ -1,0 +1,33 @@
+{
+    "workspace.library": [
+        "/home/gera/.config/nvim",
+        "/home/gera/.local/share/nvim/site",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/ansible-vim",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/auto-pairs",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/catppuccin",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-document-symbol",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-signature-help",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/share/nvim/runtime/pack/dist/opt/matchit",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/catppuccin/after",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-document-symbol/after",
+        "/home/gera/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-signature-help/after",
+        "/usr/share/vim/site",
+        "${3rd}/luassert/library",
+        "${3rd}/luv/library"
+    ]
+}
