@@ -1,0 +1,27 @@
+require("nvim-treesitter.configs").setup({
+  ensure_installed = {
+    'cmake',
+    'cpp',
+    'dart',
+    'dockerfile',
+    'html',
+    'scala',
+    'sql',
+    'css',
+    'c',
+    'lua',
+    'go',
+    'bash',
+    'yaml',
+    'html',
+    'json5',
+    'markdown',
+    'python',
+    'zig',
+  },
+  sync_install = true,
+  auto_install = true,
+  highlight = {
+    enable = true,
+  },
+})
