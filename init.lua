@@ -42,8 +42,15 @@ require('packer').startup(function(use)
 
   use {
     'nvim-treesitter/nvim-treesitter',
-    config = require("plugs.treesitter"),
+    config = function() require("plugs.treesitter") end,
   }
+
+  use({
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    after = "nvim-treesitter",
+    requires = "nvim-treesitter/nvim-treesitter",
+    config = function() require("plugs.treesitter-textobjects") end,
+  })
 
   use {
     'nvim-tree/nvim-tree.lua',
@@ -51,7 +58,7 @@ require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons',
     },
     tag = 'nightly',
-    config = require("plugs.nvim-tree"),
+    config = function() require("plugs.nvim-tree") end,
   }
 
   use {
@@ -78,7 +85,7 @@ require('packer').startup(function(use)
 
   use {
     'lewis6991/gitsigns.nvim',
-    config = require("plugs.gitsigns"),
+    config = function() require("plugs.gitsigns") end,
   }
 
   use {
@@ -89,18 +96,27 @@ require('packer').startup(function(use)
   use {
     'nvim-lualine/lualine.nvim',
     requires = 'kyazdani42/nvim-web-devicons',
-    config = require("plugs.lualine"),
+    config = function() require("plugs.lualine") end,
   }
 
   use {
     "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end,
+    config = function()
+      require("nvim-autopairs").setup({})
+    end,
   }
 
   use {
     'akinsho/bufferline.nvim',
     requires = 'nvim-tree/nvim-web-devicons',
-    config = require("plugs.bufferline"),
+    config = function() require("plugs.bufferline") end,
+  }
+
+  use {
+    "kylechui/nvim-surround",
+    config = function()
+      require("nvim-surround").setup({})
+    end,
   }
 end)
 
