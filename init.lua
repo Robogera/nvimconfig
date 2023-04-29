@@ -221,7 +221,6 @@ cmp.setup({
         cmp.complete()
       end
     end, { 'i', 's' }),
-
     ['<S-Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item(select_opts)
@@ -239,6 +238,13 @@ lsp.html.setup({ on_attach = on_attach })
 lsp.ansiblels.setup({ on_attach = on_attach })
 lsp.clangd.setup({ on_attach = on_attach })
 lsp.dartls.setup({ on_attach = on_attach })
+lsp.jsonls.setup({ on_attach = on_attach })
+lsp.metals.setup({ on_attach = on_attach })
+lsp.pyright.setup({ on_attach = on_attach })
+lsp.elixirls.setup {
+  cmd = { "language_server.sh" },
+  on_attach = on_attach
+}
 lsp.lua_ls.setup({
   on_attach = on_attach,
   settings = {
